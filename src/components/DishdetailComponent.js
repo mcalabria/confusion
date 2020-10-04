@@ -45,7 +45,7 @@ function RenderComments({comments}) {
                                         {comment.comment}
                                     </div>
                                     <div  className="col-12">
-                                        -- {comment.author}, {new Date(comment.date).toDateString()}
+                                        -- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}
                                     </div>
                                 </div>
                             </li>
