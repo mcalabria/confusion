@@ -15,7 +15,7 @@ const  DishDetail = (props) => {
         )
     else
         return(
-            <div></div>
+            <React.Fragment></React.Fragment>
         )
 }
 
